@@ -82,5 +82,13 @@
     "image": "http://static.tvtropes.org/pmwiki/pub/images/ickis.png",
     "occupation": "Ahhhh! A Real Monster!",
     "location": "Under a City Dump"
+  },
+  {
+    "id": 12,
+    "name": "Ickis",
+    "image": <img src="/images"
+    "occupation": "Ahhhh! A Real Monster!",
+    "location": "Under a City Dump"
   }
+
 ]
