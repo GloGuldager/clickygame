@@ -6,7 +6,7 @@ import Introduce from "./components/Introduce";
 import Counter from "./components/Counter";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
-
+import FooterPage from "./components/FooterPage";
 
 class App extends Component {
   // Setting this.state.imagecards to the imagecards json array
@@ -41,6 +41,7 @@ class App extends Component {
         <Introduce />
         <Counter />
       </div>
+      <FooterPage />
       </>
   );
   }
