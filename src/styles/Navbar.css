@@ -1,0 +1,47 @@
+.navbar {
+  /* background: #6a1b9a; */
+  color: white;
+  font-size: calc(10px + 14 * (100vw - 320px)/ 800);
+  z-index: 99;
+  white-space: nowrap;
+  line-height: 1.15;
+}
+
+.navbar a {
+  color: white;
+  /* font-size: 1.3rem; */
+  text-decoration: none;
+  margin: 5px;
+  line-height: 3;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+.navbar li {
+  display: inline-block;
+  padding: 26px 0;
+  width: 33.3%;
+  text-align: center;
+}
+
+.brand {
+  font-size: 2rem;
+  font-weight: bold;
+}

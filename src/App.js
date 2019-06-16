@@ -1,61 +1,45 @@
 import React, { Component } from "react";
-import FriendCard from "./components/FriendCard";
+import ImageCard from "./components/ImageCard";
 import Wrapper from "./components/Wrapper";
-import Title from "./components/Title";
-import friends from "./friends.json";
+import imagecards from "./imagecards.json";
 import Introduce from "./components/Introduce";
-import Favorite from "./components/Favorite";
 import Counter from "./components/Counter";
-import Form from "./components/Form";
-
-// function App() {
-//   return (
-//     <div>
-//       <Introduce />
-//       <Favorite />
-//       <Counter />
-//       <Form />
-//     </div>
-//   )
-// }
+import Navbar from "./components/Navbar";
+import Header from "./components/Header";
 
 
 class App extends Component {
-  // Setting this.state.friends to the friends json array
+  // Setting this.state.imagecards to the imagecards json array
   state = {
-    friends
+    imagecards
   };
 
-  removeFriend = id => {
-    // Filter this.state.friends for friends with an id not equal to the id being removed
-    const friends = this.state.friends.filter(friend => friend.id !== id);
-    // Set this.state.friends equal to the new friends array
-    this.setState({ friends });
+  removeImage = id => {
+    // Filter this.state.imagecards for imagecards with an id not equal to the id being removed
+    const imagecards = this.state.imagecards.filter(image => image.id !== id);
+    // Set this.state.imagecards equal to the new imagecards array
+    this.setState({ imagecards });
   };
 
-  // Map over this.state.friends and render a FriendCard component for each friend object
+  // Map over this.state.imagecards and render an ImageCard component for each image object
   render() {
     return (
       <>
+      <Navbar/>
+      <Header/>
       <Wrapper>
-        <Title>Friends List</Title>
-        {this.state.friends.map(friend => (
-          <FriendCard
-            removeFriend={this.removeFriend}
-            id={friend.id}
-            key={friend.id}
-            name={friend.name}
-            image={friend.image}
-            occupation={friend.occupation}
-            location={friend.location}
+        {this.state.imagecards.map(image => (
+          <ImageCard
+            removeImage={this.removeImage}
+            id={image.id}
+            key={image.id}
+            image={image.image}
           />
         ))}
       </Wrapper>
       <div>
         <Introduce />
-        <Favorite />
         <Counter />
-        <Form />
       </div>
       </>
   );
