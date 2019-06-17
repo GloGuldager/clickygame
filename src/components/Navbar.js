@@ -11,7 +11,7 @@ import "../styles/Navbar.css";
 const styles = {
   navbarStyle: {
     background: "#6caddb",
-    justifyContent: "flex-end"
+    // justifyContent: "flex-end"
   }
 };
 
@@ -20,7 +20,9 @@ const styles = {
 function Navbar() {
   return (
     <nav style={styles.navbarStyle} className="navbar">
-    <ul><li className="brand"><a href="/">Clicky Game</a></li><li className="">Click an image to begin!</li><li>Score: 0 | Top Score: 0</li></ul>
+    <ul><li className="brand"><a href="/">Clicky Game</a></li><li className=""></li><li>Score: 0 | Top Score: 0</li></ul>
+    <h2>Click on an image to earn points, but don't click on any image more than once!</h2>
+
 
     </nav>
   );

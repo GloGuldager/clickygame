@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import ImageCard from "./components/ImageCard";
 import Wrapper from "./components/Wrapper";
 import imagecards from "./imagecards.json";
-import Introduce from "./components/Introduce";
 import Counter from "./components/Counter";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
@@ -27,6 +26,7 @@ class App extends Component {
       <>
       <Navbar/>
       <Header/>
+      <Counter />
       <Wrapper>
         {this.state.imagecards.map(image => (
           <ImageCard
@@ -37,10 +37,6 @@ class App extends Component {
           />
         ))}
       </Wrapper>
-      <div>
-        <Introduce />
-        <Counter />
-      </div>
       <FooterPage />
       </>
   );

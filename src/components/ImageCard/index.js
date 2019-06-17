@@ -21,7 +21,7 @@ function ImageCard(props) {
         </ul>
       </div> */}
       <span onClick={() => props.removeFriend(props.id)} className="remove">
-        𝘅
+        {/* 𝘅 */}
       </span>
     </div>
   );
