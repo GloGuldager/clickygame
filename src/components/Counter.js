@@ -1,5 +1,7 @@
 import React from "react";
 import CardBody from "./CardBody";
+import Navbar from "./Navbar";
+import ImageCard from "./ImageCard/index"
 
 // By extending the React.Component class, Counter inherits functionality from it
 class Counter extends React.Component {
@@ -28,6 +30,16 @@ class Counter extends React.Component {
           Click Counter!
         </div>
         <CardBody
+          count={this.state.count}
+          handleIncrement={this.handleIncrement}
+          handleDecrement={this.handleDecrement}
+        />
+        <Navbar
+          count={this.state.count}
+          handleIncrement={this.handleIncrement}
+          handleDecrement={this.handleDecrement}
+        />
+        <ImageCard
           count={this.state.count}
           handleIncrement={this.handleIncrement}
           handleDecrement={this.handleDecrement}

@@ -6,8 +6,14 @@
   white-space: nowrap;
   line-height: 1.15;
   text-align: center;
+  min-height: 70px;
+  position: fixed !important;
+  width: 100%;
 }
 
+html {
+  line-height: 1.15;
+}
 .navbar a {
   color: white;
   /* font-size: 1.3rem; */
@@ -60,4 +66,8 @@ h2 {
   text-align: center;
   padding: 0px 10px 30px 10px;
   margin-bottom: 0;
+}
+@media (max-width: 420px)
+.navbar li:first-child {
+    width: 25%;
 }

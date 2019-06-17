@@ -1,5 +1,7 @@
 import React from "react";
 import "../styles/Navbar.css";
+import ImageCard from "./ImageCard/index";
+
 
 // By importing the Navbar.css file, it is added to the DOM whenever this component loads
 
@@ -17,13 +19,10 @@ const styles = {
 
 // We use JSX curly braces to evaluate the style object on the JSX tag
 
-function Navbar() {
+function Navbar(props) {
   return (
     <nav style={styles.navbarStyle} className="navbar">
-    <ul><li className="brand"><a href="/">Clicky Game</a></li><li className=""></li><li>Score: 0 | Top Score: 0</li></ul>
-    <h2>Click on an image to earn points, but don't click on any image more than once!</h2>
-
-
+    <ul><li className="brand"><a href="/">Clicky Game</a></li><li className="alert"></li><li className="Score">Score: {props.count} | Top Score: 0</li></ul>
     </nav>
   );
 }
