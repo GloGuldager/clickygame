@@ -12,14 +12,48 @@
 .card {
   background-size: cover;
   background-position: 50%;
+  background-position-x: 50%;
+  background-position-y: 50%;
   height: 170px;
   width: 170px;
-  margin: 8px 25px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
   border: 5px solid #f1f1f1;
   border-radius: 3px;
   -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
   box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
   cursor: pointer;
+  border-bottom-color: rgb(241, 241, 241);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-style: solid;
+  border-bottom-width: 5px;
+  border-image-outset: 0px;
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  border-image-source: none;
+  border-image-width: 1;
+  border-left-color: rgb(241, 241, 241);
+  border-left-style: solid;
+  border-left-width: 5px;
+  border-right-color: rgb(241, 241, 241);
+  border-right-style: solid;
+  border-right-width: 5px;
+  border-top-color: rgb(241, 241, 241);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-style: solid;
+  border-top-width: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px 0px, rgba(0, 0, 0, 0.23) 0px 3px 6px 0px;
+  box-sizing: border-box;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  display: block;
+  font-family: sans-serif;
+  line-height: 18.4px;
+  text-size-adjust: 100%;
 }
 
 .card > .img-container {
@@ -32,21 +66,66 @@
   width: 100%
 }
 
-.card > .content {
+.card:hover {
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-size: cover;
+  border-bottom-color: rgb(241, 241, 241);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-style: solid;
+  border-bottom-width: 5px;
+  border-image-outset: 0px;
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  border-image-source: none;
+  border-image-width: 1;
+  border-left-color: rgb(241, 241, 241);
+  border-left-style: solid;
+  border-left-width: 5px;
+  border-right-color: rgb(241, 241, 241);
+  border-right-style: solid;
+  border-right-width: 5px;
+  border-top-color: rgb(241, 241, 241);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-style: solid;
+  border-top-width: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px 0px, rgba(0, 0, 0, 0.23) 0px 3px 6px 0px;
+  box-sizing: border-box;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  display: block;
+  font-family: sans-serif;
+  height: 170px;
+  line-height: 18.4px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  text-size-adjust: 100%;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  transition-delay: 0s;
+  transition-duration: 0.1s;
+  transition-property: all;
+  transition-timing-function: ease;
+  width: 170px;  
+}
+/* .card > .content {
   padding-left: 1rem;
   padding-right: 1rem;
   font-size: 15px;
-}
+} */
 
-.card > .content > ul {
+/* .card > .content > ul {
   list-style-type: none;
-}
+} */
 
-.card > .content > ul > li {
+/* .card > .content > ul > li {
   margin-top: 18px;
-}
+} */
 
-.card > .remove {
+/* .card > .remove {
   color: #ff1744;
   font-size: 48px;
   position: absolute;
@@ -56,8 +135,8 @@
 }
 
 .card > .remove:hover {
-  color: #d50000;
-}
+  color: #d50000; */
+/* } */
 
 @media (max-width: 500px)
 .card {
