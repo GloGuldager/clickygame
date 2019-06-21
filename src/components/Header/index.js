@@ -22,9 +22,19 @@ const styles = {
 function Header() {
   return (
     <header style={styles.headerStyle} className="header">
-      {/* <h1>Clicky Game!</h1> */}
-      <h2>Click on an image to earn points, but don't click on any image more than once!</h2>
+
+    <div className="App">
+    <header className="App-header">
+      {/* <img src={logo} className="App-logo" alt="logo" /> */}
+      <h1 className="App-title">Welcome to React Clicky Game!!</h1>
     </header>
+    <h3 className="App-intro">
+      <strong>Click on an image to earn points, but don't click on any, more than once!</strong> 
+      <p className = "score"><strong>Score: {this.state.score} | TopScore: {this.state.topScore}</strong></p>
+      <p className="message"><strong>{this.state.message}</strong></p>
+    </h3>
+</div>
+</header>
   );
 }
 
