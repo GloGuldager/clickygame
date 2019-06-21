@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import ImageCard from "./components/ImageCard";
 import Wrapper from "./components/Wrapper";
-import imagecards from "./components/imagecards.json";
+import imagecards from "./imagecards.json";
 // import Counter from "./components/Counter";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
@@ -10,7 +10,7 @@ import FooterPage from "./components/FooterPage";
 class App extends Component {
   // Setting this.state.imagecards to the imagecards json array
   state = {
-    imagecards
+    imagecards,
   };
 
   removeImage = id => {
