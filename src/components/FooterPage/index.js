@@ -10,7 +10,7 @@ const FooterPage = () => {
     <MDBFooter color="blue" className="font-small footer">
       <div className="footer-copyright text-center py-3">
         <MDBContainer fluid>
-          &copy; {new Date().getFullYear()} Copyright: <a href="https://gloguldager.github.io/"> Gloria Guldager </a>
+          &copy; {new Date().getFullYear()} Copyright: <a href="https://gloguldager.github.io/"> Gloria Guldager - with React </a>
         </MDBContainer>
       </div>
     </MDBFooter>

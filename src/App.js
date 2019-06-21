@@ -32,7 +32,7 @@ class App extends Component {
       this.setState({
         clickedArray: this.state.clickedArray.concat([id]),
         score: this.state.score + 1,
-        message: "Correct!! 🙂",
+        message: "Correct!! 🙂 Keep Going",
         shakeit: "false"
       });
     }
@@ -61,10 +61,12 @@ class App extends Component {
         <h1 className="App-title">Welcome to Clicky Game!!</h1>
       </header>
       <h3 className="App-intro">
-        <strong>Click on an image to earn points, but try not to click an image more than once!</strong> 
+      <p className = "instruction"><strong>Click on an image to earn points,</strong></p>
+      <p className = "instruction"><strong>but try not to click an image more than once!</strong></p>
         <p className = "score"><strong>Score: {this.state.score} | TopScore: {this.state.topScore}</strong></p>
         <p className="message"><strong>{this.state.message}</strong></p>
       </h3>
+
 
       <Wrapper
         shakeWrapper = {this.state.shakeit}
@@ -74,7 +76,6 @@ class App extends Component {
               clickImage={this.clickImage}
               id={image.id}
               key={image.id} // to get rid of unique key prop warning
-              // name={image.name}
               image={image.image}
             />
           ))}

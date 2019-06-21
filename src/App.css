@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4fRGuSIc0Nf-x_Kl8abu9mE6FfnpIiyvYZCcQolljVvtujEP6"); */
+  margin: 0px;
 }
 
 .App-logo {
@@ -11,22 +11,43 @@
 .App-header {
   background-color:#6caddb;
   height: 150px;
-  padding: 20px;
+  padding: 10px;
   color: white;
+  margin: 0px;
 }
 
 .App-title {
   font-size: 1.5em;
+  font-weight: bold;
+  margin: 0px;
 }
 
 .App-intro {
   font-size: large;
-  padding: 20px;
-  color: darkblue;
+  font-weight: bold;
+  padding-top: 10px;
+  color: #0a6ebd;
+  background-color: #ECEFF1;
+  margin: 0px;
 }
 
+.message {
+  background-color: #ECEFF1;
+  margin: 0px;
+}
+
+.instruction {
+  background-color: #ECEFF1;
+  margin: 0px;
+}
+
+p {
+  margin: 0px;
+  padding: 0px;
+}
 .score {
-  color: rgb(128, 0, 85);
+  color:#740644;
+  margin: 0px;
 }
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
