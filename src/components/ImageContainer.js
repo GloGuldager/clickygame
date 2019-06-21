@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import ImageCard from "./ImageCard/index";
-import Wrapper from "./Wrapper/index";
+import ImageCard from "./ImageCard";
+import Wrapper from "./Wrapper";
 import imagecards from "./imagecards.json";
-import Counter from "./components/Counter";
-import Navbar from "./components/Navbar";
-import Header from "./components/Header";
-import FooterPage from "./components/FooterPage";
+import Counter from "./Counter";
+import Navbar from "./Navbar";
+import Header from "./Header";
+import FooterPage from "./FooterPage";
 
 class App extends Component {
   // Setting this.state.imagecards to the imagecards json array

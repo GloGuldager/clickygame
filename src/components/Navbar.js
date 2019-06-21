@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/Navbar.css";
-import ImageCard from "./ImageCard/index";
+// import ImageCard from "./ImageCard";
 
 
 // By importing the Navbar.css file, it is added to the DOM whenever this component loads
