@@ -1,5 +1,5 @@
 import React from "react";
-import CardBody from "./CardBody";
+import CardBody from "./CounterCard";
 import Navbar from "./Navbar";
 import ImageCard from "./ImageCard/index"
 
