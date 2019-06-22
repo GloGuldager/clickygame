@@ -4,7 +4,6 @@ import './App.css';
 import ImageCard from "./components/ImageCard";
 import Wrapper from "./components/Wrapper";
 import imagecards from "./imagecards.json";
-// import Counter from "./components/Counter";
 // import Navbar from "./components/Navbar";
 // import Header from "./components/Header";
 import FooterPage from "./components/FooterPage";
